@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7F3885E7-476E-424B-A761-46D4A38EFD9C}</ProjectGuid>
+    <ProjectGuid>{DA2F6DBD-DB80-4021-A5C1-377718FE8A80}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RequireAKnockout.Tests</RootNamespace>
@@ -64,7 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RequireAKnockout\RequireAKnockout.csproj">
-      <Project>{99E7C014-3784-4609-8EAD-C23F4126CFCE}</Project>
+      <Project>{09E3AA77-8658-42D4-9E70-BFBD7DA817DC}</Project>
       <Name>RequireAKnockout</Name>
     </ProjectReference>
   </ItemGroup>
