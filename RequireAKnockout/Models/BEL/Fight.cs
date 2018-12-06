@@ -12,7 +12,7 @@ namespace RequireAKnockout.Models.BEL
         public Category Category { get; set; }
         public Fighter Winner { get; set; }
         public Fighter Looser { get; set; }
-        public VictoryType VictoryType { get; set; }
+        public string VictoryType { get; set; }
         public int ScheduledRounds { get; set; }
         public int CompletedRounds { get; set; }
     }

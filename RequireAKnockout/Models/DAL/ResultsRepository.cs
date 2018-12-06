@@ -27,7 +27,7 @@ namespace RequireAKnockout.Models.DAL
                     Looser = new Fighter(){ Name = "Adonis Stevenson" },
                     CompletedRounds = 11,
                     ScheduledRounds = 12,
-                    VictoryType = VictoryType.KnockOut
+                    VictoryType = VictoryType.KnockOut.ToString()
                 },
                 new Fight() {
                     Date = new DateTime(2018, 12, 01),
@@ -37,7 +37,7 @@ namespace RequireAKnockout.Models.DAL
                     Looser = new Fighter(){ Name = "Aaron Herrera" },
                     CompletedRounds = 10,
                     ScheduledRounds = 10,
-                    VictoryType = VictoryType.UnanimousDecision
+                    VictoryType = VictoryType.UnanimousDecision.ToString()
                 },
                 new Fight() {
                     Date = new DateTime(2018, 12, 01),
@@ -47,7 +47,7 @@ namespace RequireAKnockout.Models.DAL
                     Looser = new Fighter(){ Name = "Vitor Jones Freitas" },
                     CompletedRounds = 3,
                     ScheduledRounds = 10,
-                    VictoryType = VictoryType.TechnicalKnockOut
+                    VictoryType = VictoryType.TechnicalKnockOut.ToString()
                 },
                 new Fight() {
                     Date = new DateTime(2018, 12, 01),
@@ -57,7 +57,7 @@ namespace RequireAKnockout.Models.DAL
                     Looser = new Fighter(){ Name = "Fabio Maldonado" },
                     CompletedRounds = 10,
                     ScheduledRounds = 10,
-                    VictoryType = VictoryType.UnanimousDecision
+                    VictoryType = VictoryType.UnanimousDecision.ToString()
                 }
             };
         }

@@ -82,12 +82,18 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="index.html" />
+    <Content Include="scripts\app\ajax.js" />
     <Content Include="scripts\app\app.js" />
+    <Content Include="scripts\app\components\fight-panel.html" />
+    <Content Include="scripts\app\components\fight-panel.js" />
     <Content Include="scripts\app\components\page-title.html" />
     <Content Include="scripts\app\components\page-title.js" />
+    <Content Include="scripts\vendor\axios.min.js" />
     <Content Include="scripts\vendor\knockout-3.3.0.js" />
+    <Content Include="scripts\vendor\knockout.mapping-latest.js" />
     <Content Include="scripts\vendor\require.min.js" />
     <Content Include="scripts\vendor\text.js" />
+    <Content Include="styles\styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
