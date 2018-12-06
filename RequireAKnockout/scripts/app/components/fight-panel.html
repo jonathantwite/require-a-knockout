@@ -1,0 +1,16 @@
+﻿<div class="panel">
+    <div class="info">
+        <p class="date" data-bind="text: date"></p>
+        <p class="location" data-bind="with: location"><span data-bind="text: Name"></span> <span data-bind="text:City"></span> <span data-bind="text:Country"></span></p>
+    </div>
+    <div class="fighters">
+        <div class="winner" data-bind="with: winner"><h3 data-bind="text: Name"></h3></div>
+        <div class="vs">Vs.</div>
+        <div class="looser" data-bind="with: looser"><h3 data-bind="text: Name"></h3></div>
+    </div>
+    <div class="details">
+        <p class="category" data-bind="text: category.Name"></p>
+        <p class="win-by">Winner by: <span data-bind="text: victoryType"></span></p>
+        <p class="rounds"><span data-bind="text: completedRounds"></span>/<span data-bind="text: scheduledRounds"></span></p>
+    </div>
+</div>

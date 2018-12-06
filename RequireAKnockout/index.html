@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Require a knockout</title>
+    <link href="styles/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="page-container">
+        <page-title params="pageTitle: pageTitle"></page-title>
+        <div data-bind="foreach: fights">
+            <fight-panel params="fight: $data"></fight-panel>
+        </div>
+    </div>
+
+    <script data-main="scripts/app/app" src="scripts/vendor/require.min.js"></script>
+</body>
+</html>
