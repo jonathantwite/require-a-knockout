@@ -8,11 +8,11 @@ using System.Web.Http;
 
 namespace RequireAKnockout.Controllers
 {
-    public class HomeController : ApiController
+    public class ResultsController : ApiController
     {
         private ResultsRepository results;
 
-        public HomeController()
+        public ResultsController()
         {
             results = new ResultsRepository();
         }
