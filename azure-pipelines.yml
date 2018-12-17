@@ -18,6 +18,20 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
+#- script: |
+#    npm install
+#    npm build
+
+- task: Npm@1
+  inputs:
+    command: 'install'
+    workingDir: 'RequireAKnockout'
+
+- task: gulp@1
+  inputs:
+    gulpFile: 'RequireAKnockout\gulpfile.js'
+    targets: 'build'
+
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
@@ -25,12 +39,12 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- script: |
-    npm install
-    npm build
-
 - task: VSTest@2
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    artifactName: drop
