@@ -29,3 +29,6 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+- script: |
+    node scripts/vendor/r.js -o build.js

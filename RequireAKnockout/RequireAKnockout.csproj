@@ -81,6 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="gulpfile.js" />
     <Content Include="index.html" />
     <Content Include="scripts\app\ajax.js" />
     <Content Include="scripts\app\app.js" />
@@ -88,6 +89,7 @@
     <Content Include="scripts\app\components\fight-panel.js" />
     <Content Include="scripts\app\components\page-title.html" />
     <Content Include="scripts\app\components\page-title.js" />
+    <Content Include="scripts\vendor\almond.js" />
     <Content Include="scripts\vendor\axios.min.js" />
     <Content Include="scripts\vendor\knockout-3.3.0.js" />
     <Content Include="scripts\vendor\knockout.mapping-latest.js" />
@@ -111,6 +113,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="package.json" />
+    <Content Include="package-lock.json" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

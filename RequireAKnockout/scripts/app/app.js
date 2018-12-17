@@ -8,7 +8,7 @@
     }
 });
 
-require(['knockout', 'knockout-mapping', 'ajax'], function (ko, komapping, ajax) {
+require(['knockout', 'knockout-mapping', 'ajax', 'components/page-title', 'components/fight-panel'], function (ko, komapping, ajax) {
     ko.components.register('page-title', { require: 'components/page-title' });
     ko.components.register('fight-panel', { require: 'components/fight-panel' });
 
