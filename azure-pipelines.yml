@@ -25,6 +25,7 @@ steps:
 - task: Npm@1
   inputs:
     command: 'install'
+    workingDir: 'RequireAKnockout'
 
 - task: gulp@1
   inputs:
