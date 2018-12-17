@@ -22,7 +22,7 @@ steps:
 #    npm install
 #    npm build
 
-- task: gulp@1
+- task: gulp@0
   inputs:
     gulpFile: 'RequireAKnockout\gulpfile.js'
     targets: 'build'
