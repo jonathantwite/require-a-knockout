@@ -1,5 +1,6 @@
 var del = require('del');
 var gulp = require('gulp');
+var eslint = require('gulp-eslint');
 var htmlreplace = require('gulp-html-replace');
 var requirejsOptimize = require('gulp-requirejs-optimize');
 var sourcemaps = require('gulp-sourcemaps');
@@ -8,6 +9,13 @@ const outputFolder = 'dist';
 
 gulp.task('clean:dist', function () {
     return del([outputFolder + '/**/*']);
+});
+
+gulp.task('eslint', function () {
+    return gulp.src(['scripts/app/**/*.js'])
+        .pipe(eslint())
+        .pipe(eslint.format())
+        .pipe(eslint.failAfterError());
 });
 
 gulp.task('js', function () {
@@ -35,7 +43,9 @@ gulp.task('html', function () {
 });
 
 gulp.task('build',
-    gulp.series('clean:dist',
+    gulp.series(
+        'eslint',
+        'clean:dist',
         gulp.parallel('html', 'js', 'styles')
     )
 );
