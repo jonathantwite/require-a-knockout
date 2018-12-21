@@ -25,6 +25,7 @@ gulp.task('eslint', function () {
 
 gulp.task('js', function () {
     return gulp.src('scripts/app/app.js')
+        //.pipe(sourcemaps.init())
         .pipe(requirejsOptimize({
             mainConfigFile: 'scripts/app/app.js', // Main config location - defines module locations
             name: './../vendor/almond',           // Name of first module to optimise
@@ -32,7 +33,7 @@ gulp.task('js', function () {
             //optimize: 'none',                   // For debug
             wrap: true                            // Wraps in IIFE (not sure if needed)
         }))
-        .pipe(sourcemaps.write())
+        //.pipe(sourcemaps.write())
         .pipe(gulp.dest(outputFolder + '/scripts'));
 });
 
