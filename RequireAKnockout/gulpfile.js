@@ -1,5 +1,6 @@
 var del = require('del');
 var gulp = require('gulp');
+var debug = require('gulp-debug');
 var eslint = require('gulp-eslint');
 var htmlreplace = require('gulp-html-replace');
 var requirejsOptimize = require('gulp-requirejs-optimize');
@@ -13,7 +14,11 @@ gulp.task('clean:dist', function () {
 
 gulp.task('eslint', function () {
     return gulp.src(['scripts/app/**/*.js'])
-        .pipe(eslint())
+        .pipe(debug())
+        .pipe(eslint({
+            'envs': ['amd'],
+            'globals': ['requirejs']
+        }))
         .pipe(eslint.format())
         .pipe(eslint.failAfterError());
 });

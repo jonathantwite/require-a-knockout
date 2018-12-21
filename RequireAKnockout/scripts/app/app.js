@@ -1,10 +1,10 @@
 ﻿requirejs.config({
     baseUrl: 'scripts/app',
     paths: {
-        "knockout": "../vendor/knockout-3.3.0",
-        "knockout-mapping": "../vendor/knockout.mapping-latest",
-        "text": "../vendor/text",
-        "axios": "../vendor/axios.min"
+        'knockout': '../vendor/knockout-3.3.0',
+        'knockout-mapping': '../vendor/knockout.mapping-latest',
+        'text': '../vendor/text',
+        'axios': '../vendor/axios.min'
     }
 });
 
@@ -29,7 +29,7 @@ require(['knockout', 'knockout-mapping', 'ajax', 'components/page-title', 'compo
             self.fights(fights());
 
         });
-    }
+    };
 
     var vm = new ViewModel();
     ko.applyBindings(vm);
